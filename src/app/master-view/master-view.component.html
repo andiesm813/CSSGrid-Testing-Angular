@@ -1,0 +1,65 @@
+<igx-navbar class="navbar">
+  <igx-navbar-action>
+    <button igxRipple igxIconButton="flat" class="icon-button">
+      <igx-icon>
+        menu
+      </igx-icon>
+    </button>
+  </igx-navbar-action>
+  <igx-navbar-title class="navbar-content">
+    <h6 class="h6">
+      Screen Title
+    </h6>
+  </igx-navbar-title>
+  <button igxRipple igxIconButton="flat" class="icon-button">
+    <igx-icon>
+      search
+    </igx-icon>
+  </button>
+  <button igxRipple igxIconButton="flat" class="icon-button">
+    <igx-icon>
+      favorite
+    </igx-icon>
+  </button>
+  <button igxRipple igxIconButton="flat" class="icon-button">
+    <igx-icon>
+      more_vert
+    </igx-icon>
+  </button>
+</igx-navbar>
+<div class="row-layout group">
+  <igx-nav-drawer [isOpen]="true" [pin]="true" class="nav-drawer">
+    <ng-template igxDrawer>
+      <div igxDrawerItem igxRipple routerLink="/master-view/css-grid1">
+        <span>CSS Grid 1</span>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/master-view/css-grid2">
+        <span>CSS Grid 2</span>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/master-view/flex-layout1">
+        <span>Flex Layout 1</span>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/master-view/flex-layout2">
+        <span>Flex Layout 2</span>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/master-view/css-grid1-span-issue">
+        <span>CSS Grid 1 - Span Issue</span>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/master-view/css-grid2-min-height">
+        <span>CSS Grid 2 - Min Height</span>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/master-view/css-grid3-overflow">
+        <span>CSS Grid 3 - Overflow</span>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/master-view/flex-layout3-overflow">
+        <span>Flex Layout 3 - Overflow</span>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/flex-layout-sample3-overflow">
+        <span>Flex Layout Sample 3 - Overflow</span>
+      </div>
+    </ng-template>
+  </igx-nav-drawer>
+  <div class="view-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
