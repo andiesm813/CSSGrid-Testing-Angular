@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { MasterViewComponent } from './master-view/master-view.component';
 
 @Component({
   selector: 'app-root',
