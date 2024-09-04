@@ -1,6 +1,6 @@
 <igx-navbar class="navbar">
   <igx-navbar-action>
-    <button igxRipple igxIconButton="flat" class="icon-button">
+    <button igxRipple igxIconButton="flat" [igxToggleAction]="navDrawer" class="icon-button">
       <igx-icon>
         menu
       </igx-icon>
@@ -8,7 +8,7 @@
   </igx-navbar-action>
   <igx-navbar-title class="navbar-content">
     <h6 class="h6">
-      Screen Title
+      Layouts Testing
     </h6>
   </igx-navbar-title>
   <button igxRipple igxIconButton="flat" class="icon-button">
@@ -28,7 +28,7 @@
   </button>
 </igx-navbar>
 <div class="row-layout group">
-  <igx-nav-drawer [isOpen]="true" [pin]="true" class="nav-drawer">
+  <igx-nav-drawer [isOpen]="true" [pin]="true" #navDrawer class="nav-drawer">
     <ng-template igxDrawer>
       <div igxDrawerItem igxRipple routerLink="/master-view/css-grid1">
         <span>CSS Grid 1</span>
